@@ -40,4 +40,5 @@ ENTRYPOINT go run server.go
 #EXPOSE 1323
 
 #AppEngineのフレキシブル環境向けにぽDocker上のポート番号も80にしておく。
-EXPOSE 80
+#AppEngineのフレキシブル環境はポート番号も8080固定？
+EXPOSE 8080
