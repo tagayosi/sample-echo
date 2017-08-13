@@ -37,4 +37,7 @@ ENTRYPOINT go run server.go
 #server.goでポート番号8080を使用している場合は、EXPOSE 8080
 #docker runで実行時にオプション-p [ホストのポート番号]:[コンテナのポート番号]を指定する。
 #ホスト上でポート番号80で公開する場合は、-p 80:1323 など。
-EXPOSE 1323
+#EXPOSE 1323
+
+#AppEngineのフレキシブル環境向けにぽDocker上のポート番号も80にしておく。
+EXPOSE 80
