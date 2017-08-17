@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	println("start main()")
 	// Echo instance
 	e := echo.New()
 
