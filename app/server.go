@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-	"os"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
@@ -23,8 +22,8 @@ func main() {
 	})
 
 	// Start server
-	//e.Logger.Fatal(e.Start(":1323"))
-	e.Logger.Fatal(e.Start(":" + os.Getenv("HTTP_PLATFORM_PORT")))
+	e.Logger.Fatal(e.Start(":80"))
+	//e.Logger.Fatal(e.Start(":" + os.Getenv("HTTP_PLATFORM_PORT")))
 	//e.Logger.Fatal(e.Start(":8080"))
 	//e.Logger.Fatal(e.Start(":" + os.Getenv("HTTP_PLATFORM_PORT")))
 
