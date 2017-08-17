@@ -3,3 +3,9 @@ env: flex
 automatic_scaling:
   min_num_instances: 2
   max_num_instances: 3
+
+env_variables:
+  MYSQL_CONNECTION_ISLA_BRIDGE_PROTO01: proxyuser@unix(/cloudsql/ourfirstproject-158212:asia-northeast1:isladb)/bridge_proto01
+
+beta_settings:
+  cloud_sql_instances: ourfirstproject-158212:asia-northeast1:isladb
